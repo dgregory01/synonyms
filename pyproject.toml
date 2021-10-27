@@ -8,6 +8,8 @@ authors = ["Daniel Gregory"]
 python = "^3.8"
 beautifulsoup4 = "^4.10.0"
 requests = "^2.26.0"
+doubles = "^1.5.3"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
 

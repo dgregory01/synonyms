@@ -19,3 +19,14 @@ def test_list_synonyms_happy_path():
     assert len(synonyms) == 48
     assert synonyms[0] == 'cheerful'
     assert synonyms[47] == 'walking on air'
+
+
+def test_list_synonyms_happy_path_with_top_n():
+    allow(mock_http_client).get_html.and_return(_read_resource_to_str('synonyms.html'))
+
+    soup = FindSynonyms('any url')
+    synonyms = soup.get_synonyms('happy', 10)
+
+    assert len(synonyms) == 10
+    assert synonyms[0] == 'cheerful'
+    assert synonyms[9] == 'lively'

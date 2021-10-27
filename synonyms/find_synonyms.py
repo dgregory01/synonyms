@@ -17,7 +17,7 @@ class FindSynonyms:
         soup = FindSynonyms._to_soup(html_text)
 
         meanings = soup.find(id='meanings')
-        return list(map(lambda node: node.text, meanings.find_all('a')))
+        return list(map(lambda node: str.strip(node.text), meanings.find_all('a')))
 
     @staticmethod
     def _construct_url(base_url, word):

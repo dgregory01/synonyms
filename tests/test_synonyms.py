@@ -17,5 +17,5 @@ def test_list_synonyms_happy_path():
     synonyms = soup.get_synonyms('happy')
 
     assert len(synonyms) == 48
-    assert synonyms[0] == 'cheerful '
-    assert synonyms[47] == 'walking on air '
+    assert synonyms[0] == 'cheerful'
+    assert synonyms[47] == 'walking on air'

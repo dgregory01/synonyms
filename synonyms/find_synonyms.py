@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from more_itertools import take
 
-import synonyms.http.client as http_client
+import synonyms.http_client as http_client
 
 THESAURUS_BASE_URL = 'https://www.thesaurus.com/browse/'
 

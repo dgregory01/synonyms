@@ -1,7 +1,7 @@
 import requests as mock_requests
 from doubles import allow
 
-import synonyms.http.client as http_client
+import synonyms.http_client as http_client
 
 
 def test_get_html_happy_path():
